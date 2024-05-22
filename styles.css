@@ -1,0 +1,190 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  max-width: 1380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 30px;
+  gap: 24px;
+}
+
+.block-1,
+.block-2,
+.block-3,
+.block-4,
+.block-5,
+.block-6,
+.block-7,
+.block-8,
+.block-9 {
+  max-width: 424px;
+  display: flex;
+  padding: 24px;
+  flex: 1 1 424px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.card-content {
+  flex-shrink: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  display: flex;
+  justify-content: end;
+}
+
+.block-1,
+.block-5,
+.block-9 {
+  border: 2px solid #179d2e;
+}
+
+.block-2,
+.block-6 {
+  border: 2px solid #0177b8;
+}
+
+.block-3,
+.block-7 {
+  border: 2px solid #f5af23;
+}
+
+.block-4,
+.block-8 {
+  border: 2px solid #f02e2c;
+}
+
+.information {
+  width: 376px;
+  height: 100%;
+  margin-bottom: 24px;
+}
+
+.information h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 24px;
+}
+
+.information ul {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  padding-left: 10px;
+  margin: auto;
+}
+
+.information li {
+  margin: 12px;
+}
+
+.link-more {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2d2d2d;
+}
+
+.more {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .block-1,
+  .block-2,
+  .block-3,
+  .block-4,
+  .block-5,
+  .block-6,
+  .block-7,
+  .block-8,
+  .block-9 {
+    min-width: 275px;
+    max-width: 350px;
+    padding: 16px;
+  }
+
+  .information {
+    width: 100%;
+  }
+
+  .information h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .information ul {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .link-more {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 375px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .block-1,
+  .block-2,
+  .block-3,
+  .block-4,
+  .block-5,
+  .block-6,
+  .block-7,
+  .block-8,
+  .block-9 {
+    max-width: 444px;
+    padding: 12px;
+  }
+
+  .information h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .information ul {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .link-more {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
